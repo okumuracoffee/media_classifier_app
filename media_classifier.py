@@ -54,7 +54,7 @@ def upload_file():
             else:
                 predicted = 1
             #predicted = result.argmax()
-            pred_answer = "これは " + classes[predicted] + " です" + "result:" + str(result) + "predicted:"+str(predicted)
+            pred_answer = "これは " + classes[predicted] + " です"
 
             return render_template("index.html",answer=pred_answer)
 
